@@ -34,6 +34,7 @@ pipeline {
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
                     sh "git push https://github.com/AKS144/a-reddit-clone-gitops.git main"
                 }
+                
             }
          }
     }
